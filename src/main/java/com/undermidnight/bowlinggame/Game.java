@@ -2,12 +2,14 @@ package com.undermidnight.bowlinggame;
 
 public class Game {
 
-	public void roll(int i) {
-		
+	private int score = 0;
+	
+	public void roll(int pins) {
+		this.score += pins;
 	}
 
 	public int score() {
-		return 0;
+		return score;
 	}
 
 }
